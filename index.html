@@ -5,54 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Page</title>
   
-    <!-- Google Font Links -->
+    <!-- Google Font Link -->
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+   
+  <link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
+  
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
     
     <style>
+      
         /* General styling for the page */
-        body {
+        body {       
             font-size: 18px;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
+            line-height: 1.6; 
         }
-
-        /* Neon effect for the welcome text */
-        .font-effect-neon {
-            font-family: 'Caveat', sans-serif;
+      
+      .font-effect-neon {
+           font-family: 'Caveat';
             font-size: 70px;
-            color: #fff;
-            text-align: center;
-            text-transform: uppercase;
-            letter-spacing: 30px;
-            text-shadow:
-                0 0 5px #00ff00,  /* Light green glow */
-                0 0 10px #00ff00,
-                0 0 20px #00ff00,
-                0 0 30px #00ff00,
-                0 0 40px #00ff00,
-                0 0 50px #00ff00,
-                0 0 75px #00ff00;
-        }
+            color: #fff; /* White text color */
+            text-align: center; /* Center the text */
+            text-transform: uppercase; /* Optional */
+            letter-spacing: 30px; /* Optional: for spacing between letters */
+            
+           text-shadow :
+        0 0 5px #00ff00,  /* Light green glow */
+        0 0 10px #00ff00,  /* Medium green glow */
+        0 0 20px #00ff00,  /* Stronger green glow */
+        0 0 30px #00ff00,  /* Even stronger glow */
+        0 0 40px #00ff00,  /* More intense glow */
+        0 0 50px #00ff00,  /* Larger green glow */
+        0 0 75px #00ff00;  /* Maximum green glow */
+}
 
         p {
             font-family: "Trirong", serif;
         }
 
         hr {
-            border: 0;
-            border-top: 3px solid #fff;
-            width: 100vw;  /* Full width of the viewport */
-            margin: 5px 0;
-            position: absolute;
-            left: 0;
-            right: 0;
+     border: 0;
+    border-top: 3px solid #fff;  /* White color for the line */
+    width: 100vw;  /* Full width of the viewport (100% of the viewport width) */
+    margin: 5px 0;  /* Space above and below the line */
+    position: absolute;  /* Position it absolutely */
+    left: 0;  /* Align to the left edge of the screen */
+    top: auto;  /* Remove any unwanted vertical displacement */
+    right: 0;  /* Remove any right margin, and align to the screen edge */
+      /* Ensures the background is transparent */
+    height: 0;   
         }
 
         h2 {
-            font-family: 'Quicksand', sans-serif;
+            font-family: 'Quicksand';font-size: 22px;
             font-size: 30px;
         }
 
@@ -83,66 +89,71 @@
         section {
             padding: 40px 20px;
             color: white;
-            height: auto;
-            margin-top: 120px; /* To make space for the fixed nav */
+            height: auto;  /* Height auto so it adapts to content */
         }
 
         /* About Me Section Styling */
         #about-me {
-            background-color: #8fcc74;  /* Green background */
+            background-color: #8fcc74; /* Green background */
             display: flex;
             flex-direction: row; /* Arrange text and images side by side */
-            align-items: flex-start;
-            padding: 40px 20px; /* Adjust padding to make space */
-            height: 100vh;  /* Full height */
+            justify-content: flex-start; /* Align content to the left */
+            align-items: flex-start; /* Align images and text to the top */
+            padding: 60px 20px; /* Increased padding for more space */
+            height: 100vh;  /* Adjusted height for this section */
         }
-
+      
         #welcome-container {
-            display: flex;
-            justify-content: center; /* Horizontally center the header */
-            align-items: center; /* Vertically center the header */
-            height: 20%;  /* Adjusted for better positioning */
-            text-align: center;
+           font-family: 'Arizonia';font-size: 22px;
+          display: flex;
+          justify-content: center; /* Horizontally   center the header */
+          align-items: center; /* Vertically center the header */
+          height: 10%; /* Make it take up full   height of the parent section */
+          text-align: center;
         }
 
         /* About Me text container */
         #about-me .text-content {
             text-align: left;
-            margin-right: 40px;
+            margin-right: 40px; /* Space between text and images */
             max-width: 550px;  /* Limit text width */
         }
 
         /* Image container with images placed to the right */
         .image-container {
+            margin-left: auto;  /* Push the container to the right */
             display: flex;
-            flex-direction: column;
-            align-items: flex-start; /* Align the images to the left */
-            margin-top: 0; /* Removed unnecessary margin */
+            flex-direction: column;  /* Stack the images vertically */
+            align-items: flex-end;  /* Align images to the right side of the container */
+            margin-top: 105px; /* Add margin-top to move the images down under the white line */
         }
 
         .right-img {
-            max-width: 300px;
-            margin-top: 0;
-            border: 5px solid white;
-            border-radius: 10px;
-            padding: 5px;
-            margin-bottom: 10px;
+           max-width: 300px; /* Limit the image size */
+    margin-top: 10; /* Remove extra margin above the images */
+    border: 5px solid white; /* Add a white border around the image */
+    border-radius: 10px; /* Optional: add rounded corners to the border */
+    padding: 5px; 
+        margin-bottom: 10px;
         }
 
         /* Music, Hobbies, and Books Section Styling */
         #music, #hobbies, #books {
-            padding: 40px 20px;
-            height: 120vh;
+            padding: 40px 20px;  /* Increased padding for bigger sections */
+            height: 120vh;  /* Increased height for each section */
         }
 
+        /* Music Section */
         #music {
             background-color: #8562a3; /* Music background color */
         }
 
+        /* Hobbies Section */
         #hobbies {
             background-color: #4d97b3; /* Hobbies background color */
         }
 
+        /* Books Section */
         #books {
             background-color: #e879d2; /* Books background color */
         }
@@ -163,12 +174,13 @@
         <!-- Text content aligned to the left -->
         <div class="text-content">
             <div id="welcome-container">
-                <h1 class="font-effect-neon">WELCOME</h1>
-            </div>
+        <h1 class="font-effect-neon">WELCOME</h1>
+          </div>
             <hr> <!-- Line under the welcome text -->
+            
             <!-- Text content under the welcome text -->
             <h2>About Me</h2>
-            <p>HELLO, My name is Mia Krzysztalowicz! I am a second-year student at the University of Waterloo studying global business and digital arts...</p>
+            <p>HELLO, My name is Mia Krzysztalowicz ! I am a second year student at the University of Waterloo studying global business and digital arts. By my last name you can probably guess that I am Polish though I can understand a lot more than I can speak. I grew up in Burlington but my parents just recently moved to wawa to run their own motel business. So I am here alone navigating Kitchener/Waterloo alone while commuting to Stratford since that is where my program is based. I love to spend time with my friends when I am not completing school work or working at urban behavior on the weekends. I played soccer for 7 years of my life but had an unfortunate falling out with the sport. I am working on fixing that relationship by joining soccer intramurals through the university. I also enjoy reading, listening to music and love a variety of artist hobbies! Let's take a look and explore!  </p>
         </div>
 
         <!-- Image container with images placed to the right -->
@@ -177,6 +189,7 @@
             <img src="mia-dog.JPG" alt="A photo of my dog" class="right-img">
         </div>
     </section>
+  
 
     <!-- Music Section -->
     <section id="music">
