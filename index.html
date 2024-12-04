@@ -21,7 +21,7 @@
 
         h1 {
             font-family: "Sofia", sans-serif;
-            font-size: 40px;
+            font-size: 50px;
             margin: 0;
             padding: 0;
         }
@@ -33,7 +33,7 @@
         hr {
             border: 0;
             border-top: 3px solid #fff;  /* White color for the line */
-            width: 185%;  /* Full width */
+            width: 300%;  /* Full width */
             margin: 20px 0;  /* Some space above and below the line */
         }
 
@@ -81,6 +81,14 @@
             align-items: flex-start; /* Align images and text to the top */
             padding: 60px 20px; /* Increased padding for more space */
             height: 90vh;  /* Adjusted height for this section */
+        }
+      
+        #welcome-container {
+          display: flex;
+          justify-content: center; /* Horizontally   center the header */
+          align-items: center; /* Vertically center the header */
+          height: 10%; /* Make it take up full   height of the parent section */
+          text-align: center;
         }
 
         /* About Me text container */
@@ -140,7 +148,9 @@
     <section id="about-me">
         <!-- Text content aligned to the left -->
         <div class="text-content">
-            <h1>WELCOME</h1> <!-- Welcome text -->
+            <div id="welcome-container">
+        <h1>WELCOME</h1>
+          </div>
             <hr> <!-- Line under the welcome text -->
             
             <!-- Text content under the welcome text -->
