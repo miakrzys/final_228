@@ -47,8 +47,8 @@
         }
 
         h2 {
-            font-family: 'Quicksand';font-size: 22px;
-            font-size: 30px;
+            font-family: 'Quicksand';
+            font-size: 35px;
         }
 
         /* Navigation Bar */
@@ -125,6 +125,29 @@
     padding: 5px; 
         margin-bottom: 10px;
         }
+      
+      #music img {
+    max-width: 300px; /* Limit the size of images */
+    margin-bottom: 8px; /* Add space between the images */
+    border: 5px solid #3d184d; /* Border color for the images */
+    border-radius: 10px; /* Optional: rounded corners */
+    padding: 5px;
+}
+
+/* Stack images vertically in a container */
+.image-stack {
+    display: flex;
+    flex-direction: column;  /* Stack images vertically */
+    align-items: flex-start; 
+}
+      
+    .image-stack h3 {
+    margin: 0; /* Remove default margin to avoid spacing */
+    padding: 0; /* Remove any padding */
+    font-size: 18px; /* Optional: control font size */
+    line-height: 1;
+    margin-left: 300px;/* Make sure there's no line-height spacing */
+}
 
         /* Music, Hobbies, and Books Section Styling */
         #music, #hobbies, #books {
@@ -178,13 +201,22 @@
             <img src="mia-dog.JPG" alt="A photo of my dog" class="right-img">
         </div>
     </section>
-  
 
     <!-- Music Section -->
-    <section id="music">
-        <h2>Music</h2>
-        <p>This is the "Music" section. You can list your favorite music or talk about your musical interests here.</p>
-    </section>
+   <section id="music">
+    <h2 style="color:#3d184d;">Music</h2>
+    <p>These are my top three artists as of the year 2024:</p>
+    
+    <!-- Image container for stacked images -->
+    <div class="image-stack">
+      <h3>Ashnikko</h3>
+        <img src="ash.jpeg" alt="Ashnikko new album, WeedKiller">
+       <h3>Ashnikko</h3>
+        <img src="hoe.jpeg" alt="Hozier new album, Unreal Unearth">
+       <h3>Ashnikko</h3>
+        <img src="bill.jpeg" alt="Billie Eilish new album, Hit Me Hard and Soft">
+    </div>
+</section>
 
     <!-- Hobbies Section -->
     <section id="hobbies">
