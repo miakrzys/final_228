@@ -8,24 +8,11 @@
     <!-- Google Font Link -->
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
    
-  <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
   
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
     
     <style>
-      
-      .container {
-    width: 100%;
-    background-color: rgb(120, 200, 200);
-    text-align: center;
-}
-button {
-    border: 0;
-    width: 3rem;
-    height: 3rem;
-    opacity: 0.8;
-    background-color: gray;
-}
         /* General styling for the page */
         body {       
             font-size: 18px;
@@ -34,28 +21,26 @@ button {
             line-height: 1.6; 
         }
       
-            
-      h1{
-        letter-spacing: 30px;
-        font-family: 'Caveat';
-        font-size: 70px;
-      }
+        h1 {
+            letter-spacing: 30px;
+            font-family: 'Caveat';
+            font-size: 70px;
+        }
 
         p {
             font-family: "Trirong", serif;
         }
 
         hr {
-     border: 0;
-    border-top: 3px solid  #333;  /* White color for the line */
-    width: 100vw;  /* Full width of the viewport (100% of the viewport width) */
-    margin: 5px 0;  /* Space above and below the line */
-    position: absolute;  /* Position it absolutely */
-    left: 0;  /* Align to the left edge of the screen */
-    top: auto;  /* Remove any unwanted vertical displacement */
-    right: 0;  /* Remove any right margin, and align to the screen edge */
-      /* Ensures the background is transparent */
-    height: 0;   
+            border: 0;
+            border-top: 3px solid  #333;
+            width: 100vw;
+            margin: 5px 0;
+            position: absolute;
+            left: 0;
+            top: auto;
+            right: 0;
+            height: 0;
         }
 
         h2 {
@@ -90,110 +75,100 @@ button {
         section {
             padding: 40px 20px;
             color: white;
-            height: auto;  /* Height auto so it adapts to content */
+            height: auto;
         }
 
         /* About Me Section Styling */
         #about-me {
-            background-color: #8fcc74; /* Green background */
+            background-color: #8fcc74;
             display: flex;
-            flex-direction: row; /* Arrange text and images side by side */
-            justify-content: flex-start; /* Align content to the left */
-            align-items: flex-start; /* Align images and text to the top */
-            padding: 60px 20px; /* Increased padding for more space */
-            height: 100vh;  /* Adjusted height for this section */
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding: 60px 20px;
+            height: 100vh;
         }
       
         #welcome-container {
-           font-family: 'Arizonia';font-size: 22px;
-          display: flex;
-          justify-content: center; /* Horizontally   center the header */
-          align-items: center; /* Vertically center the header */
-          height: 10%; /* Make it take up full   height of the parent section */
-          text-align: center;
+            font-family: 'Arizonia';
+            font-size: 22px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 10%;
+            text-align: center;
         }
 
-        /* About Me text container */
         #about-me .text-content {
             text-align: left;
-            margin-right: 40px; /* Space between text and images */
-            max-width: 550px;  /* Limit text width */
+            margin-right: 40px;
+            max-width: 550px;
         }
 
-        /* Image container with images placed to the right */
         .image-container {
-            margin-left: auto;  /* Push the container to the right */
+            margin-left: auto;
             display: flex;
-            flex-direction: column;  /* Stack the images vertically */
-            align-items: flex-end;  /* Align images to the right side of the container */
-            margin-top: 105px; /* Add margin-top to move the images down under the white line */
+            flex-direction: column;
+            align-items: flex-end;
+            margin-top: 105px;
         }
 
         .right-img {
-           max-width: 300px; /* Limit the image size */
-    margin-top: 10; /* Remove extra margin above the images */
-    border: 5px solid #3d692a; /* Add a white border around the image */
-    border-radius: 10px; /* Optional: add rounded corners to the border */
-    padding: 5px; 
-        margin-bottom: 10px;
+            max-width: 300px;
+            margin-top: 10;
+            border: 5px solid #3d692a;
+            border-radius: 10px;
+            padding: 5px;
+            margin-bottom: 10px;
         }
       
-      #music img {
-    max-width: 300px; /* Limit the size of images */
-    margin-bottom: 8px; /* Add space between the images */
-    border: 5px solid #3d184d; /* Border color for the images */
-    border-radius: 10px; /* Optional: rounded corners */
-    padding: 5px;
-}
+        #music img {
+            max-width: 300px;
+            margin-bottom: 8px;
+            border: 5px solid #3d184d;
+            border-radius: 10px;
+            padding: 5px;
+        }
 
-/* Stack images vertically in a container */
-.image-stack {
-    display: flex;
-    flex-direction: column;  /* Stack images vertically */
-    align-items: flex-start; 
-}
-      
-    .image-stack h3 {
-     text-decoration: underline;
-    margin: 0; /* Remove default margin to avoid spacing */
-    padding: 0; /* Remove any padding */
-    font-size: 19px; /* Optional: control font size */
-    line-height: 1;
-    margin-left: 300px;/* Make sure there's no line-height spacing */
-      color:#3d184d;
-}
-      #music h2 {
-    margin: 0;  
-}
+        .image-stack {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
 
-        /* Music, Hobbies, and Books Section Styling */
+        .image-stack h3 {
+            text-decoration: underline;
+            margin: 0;
+            padding: 0;
+            font-size: 19px;
+            line-height: 1;
+            margin-left: 300px;
+            color:#3d184d;
+        }
+
+        #music h2 {
+            margin: 0;
+        }
+
         #music, #hobbies, #books {
-            padding: 40px 20px;  /* Increased padding for bigger sections */
-            height: 120vh;  /* Increased height for each section */
+            padding: 40px 20px;
+            height: 120vh;
         }
 
-        /* Music Section */
         #music {
-            background-color: #8562a3; /* Music background color */
+            background-color: #8562a3;
         }
 
-        /* Hobbies Section */
         #hobbies {
-            background-color: #4d97b3; /* Hobbies background color */
+            background-color: #4d97b3;
         }
 
-        /* Books Section */
         #books {
-            background-color: #e879d2; /* Books background color */
+            background-color: #e879d2;
         }
-      
     </style>
 </head>
 <body> 
-  <div class="container">
-     <button>O</button><button>O</button>
-</div>
-  
   
     <!-- Navigation Links -->
     <nav>
@@ -205,19 +180,15 @@ button {
 
     <!-- About Me Section -->
     <section id="about-me">
-        <!-- Text content aligned to the left -->
         <div class="text-content">
             <div id="welcome-container">
-        <h1> WELCOME</h1>
-          </div>
+                <h1> WELCOME</h1>
+            </div>
             <hr> <!-- Line under the welcome text -->
-            
-            <!-- Text content under the welcome text -->
             <h2 style="color:#3d692a;">About Me </h2>
-            <p>HELLO, My name is Mia Krzysztalowicz ! I am a second year student at the University of Waterloo studying global business and digital arts. By my last name you can probably guess that I am Polish though I can understand a lot more than I can speak. I grew up in Burlington but my parents just recently moved to wawa to run their own motel business. So I am here alone navigating Kitchener/Waterloo alone while commuting to Stratford since that is where my program is based. I love to spend time with my friends when I am not completing school work or working at urban behavior on the weekends. I played soccer for 7 years of my life but had an unfortunate falling out with the sport. I am working on fixing that relationship by joining soccer intramurals through the university. I also enjoy reading, listening to music and love a variety of artist hobbies! Let's take a look and explore!  </p>
+            <p>HELLO, My name is Mia Krzysztalowicz! I am a second-year student at the University of Waterloo studying global business and digital arts. By my last name, you can probably guess that I am Polish, though I can understand a lot more than I can speak. I grew up in Burlington, but my parents just recently moved to Wawa to run their own motel business. So, I am here alone navigating Kitchener/Waterloo alone while commuting to Stratford since that is where my program is based. I love to spend time with my friends when I am not completing schoolwork or working at Urban Behavior on the weekends. I played soccer for 7 years of my life but had an unfortunate falling out with the sport. I am working on fixing that relationship by joining soccer intramurals through the university. I also enjoy reading, listening to music, and love a variety of artistic hobbies! Let's take a look and explore!</p>
         </div>
 
-        <!-- Image container with images placed to the right -->
         <div class="image-container">
             <img src="mia.jpeg" alt="A photo of me" class="right-img">
             <img src="mia-dog.JPG" alt="A photo of my dog" class="right-img">
@@ -225,21 +196,21 @@ button {
     </section>
 
     <!-- Music Section -->
-   <section id="music">
-    <h2 style="color:#3d184d;">Music</h2>
-    <p>These are my top three artists as of the year 2024:</p>
+    <section id="music">
+        <h2 style="color:#3d184d;">Music</h2>
+        <p>These are my top three artists as of the year 2024:</p>
     
-    <!-- Image container for stacked images -->
-    <div class="image-stack">
-      <h3>
-        <a href="https://open.spotify.com/artist/3PyJHH2wyfQK3WZrk9rpmP">Ashnikko</h3></a>
-        <img src="ash.jpeg" alt="Ashnikko new album, WeedKiller">
-       <h3>Hozier</h3>
-        <img src="hoe.jpeg" alt="Hozier new album, Unreal Unearth">
-       <h3>Billie Eilish</h3>
-        <img src="bill.jpeg" alt="Billie Eilish new album, Hit Me Hard and Soft">
-    </div>
-</section>
+        <div class="image-stack">
+            <h3><a href="https://open.spotify.com/artist/3PyJHH2wyfQK3WZrk9rpmP">Ashnikko</a></h3>
+            <img src="ash.jpeg" alt="Ashnikko new album, WeedKiller">
+            
+            <h3><a href="https://open.spotify.com/artist/2FXC3k01G6Gw61bmprjgqS">Hozier</a></h3>
+            <img src="hoe.jpeg" alt="Hozier new album, Unreal Unearth">
+            
+            <h3><a href="https://open.spotify.com/artist/6qqNVTkY8uBg9cP3Jd7DAH">Billie Eilish</a></h3>
+            <img src="bill.jpeg" alt="Billie Eilish new album, Hit Me Hard and Soft">
+        </div>
+    </section>
 
     <!-- Hobbies Section -->
     <section id="hobbies">
