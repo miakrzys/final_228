@@ -8,11 +8,12 @@
     <!-- Google Font Link -->
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
    
-  <link href="https://fonts.googleapis.com/css?family=Arizonia" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
   
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
     
     <style>
+      
         /* General styling for the page */
         body {       
             font-size: 18px;
@@ -20,13 +21,24 @@
             padding: 0;
             line-height: 1.6; 
         }
-
-        h1 {
-            font-family: 'Arizonia';
+      
+      .font-effect-neon {
+           font-family: 'Caveat';
             font-size: 50px;
-            margin: 0;
-            padding: 0;
-        }
+            color: #fff; /* White text color */
+            text-align: center; /* Center the text */
+            text-transform: uppercase; /* Optional */
+            letter-spacing: 30px; /* Optional: for spacing between letters */
+            
+           text-shadow:
+        0 0 5px #00ff00,  /* Light green glow */
+        0 0 10px #00ff00,  /* Medium green glow */
+        0 0 20px #00ff00,  /* Stronger green glow */
+        0 0 30px #00ff00,  /* Even stronger glow */
+        0 0 40px #00ff00,  /* More intense glow */
+        0 0 50px #00ff00,  /* Larger green glow */
+        0 0 75px #00ff00;  /* Maximum green glow */
+}
 
         p {
             font-family: "Trirong", serif;
@@ -162,7 +174,7 @@
         <!-- Text content aligned to the left -->
         <div class="text-content">
             <div id="welcome-container">
-        <h1>WELCOME</h1>
+        <h1 class="font-effect-neon">WELCOME</h1>
           </div>
             <hr> <!-- Line under the welcome text -->
             
