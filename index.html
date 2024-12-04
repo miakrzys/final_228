@@ -7,9 +7,7 @@
   
     <!-- Google Font Link -->
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-   
     <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
-  
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
     
     <style>
@@ -90,8 +88,6 @@
         }
       
         #welcome-container {
-            font-family: 'Arizonia';
-            font-size: 22px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -146,6 +142,25 @@
             color:#3d184d;
         }
 
+        /* Music Section Link Styles */
+        #music a {
+            color: #3d184d; /* Default color for links */
+            text-decoration: none; /* Remove underline by default */
+        }
+
+        #music a:hover {
+            color: #e879d2; /* Change color when the link is hovered */
+            text-decoration: underline; /* Add underline on hover */
+        }
+
+        #music a:visited {
+            color: #e3baf5; /* Change color after the link has been visited */
+        }
+
+        #music a:active {
+            color: #3d184d; /* Change color when the link is active (clicked) */
+        }
+
         #music h2 {
             margin: 0;
         }
@@ -166,6 +181,40 @@
         #books {
             background-color: #e879d2;
         }
+
+        /* Music Section: Create containers for paragraphs */
+        .artist-container {
+            display: flex; /* Display the elements horizontally */
+            align-items: center; /* Vertically align items */
+            margin-bottom: 20px; /* Space between the artist sections */
+            flex-direction: row-reverse; /* Swap image and text, text comes first */
+        }
+
+        .artist-container img {
+            max-width: 250px; /* Set a consistent image size */
+            margin-left: 20px; /* Add space between the image and text */
+            border: 5px solid #3d184d;
+            border-radius: 10px;
+            padding: 5px;
+        }
+
+        .artist-container h3 {
+            margin: 0;
+            padding: 0;
+            font-size: 19px;
+            color: #3d184d;
+        }
+
+        /* Style for the paragraph container */
+        .artist-description {
+            max-width: 350px; /* Control paragraph width */
+            margin-left: 20px; /* Space between text and image */
+            font-size: 16px;
+            color: white;
+            line-height: 1.5;
+        }
+
+        
     </style>
 </head>
 <body> 
@@ -198,17 +247,35 @@
     <!-- Music Section -->
     <section id="music">
         <h2 style="color:#3d184d;">Music</h2>
-        <p>These are my top three artists as of the year 2024:</p>
+      <h4 style="color:#3d184d;">My Top Three Artists of 2024:</h4>
     
         <div class="image-stack">
-            <h3><a href="https://open.spotify.com/artist/3PyJHH2wyfQK3WZrk9rpmP">Ashnikko</a></h3>
-            <img src="ash.jpeg" alt="Ashnikko new album, WeedKiller">
+            <!-- Ashnikko -->
+            <div class="artist-container">
+                <div class="artist-description">
+                    <h3><a href="https://open.spotify.com/artist/3PyJHH2wyfQK3WZrk9rpmP">Ashnikko</a></h3>
+                    <p>Ashnikko was introduced to me through my best friend. I have never loved an artist more than her. She mixes pop, rap, and electronic styles with crazy lyrics that I cannot get enough of. I like to listen to her when I need some motivation or just to boost my mood. My favorite songs are Invitation, Possession of a Weapon and Cheerleader!</p>
+                </div>
+                <img src="ash.jpeg" alt="Ashnikko new album, WeedKiller">
+            </div>
             
-            <h3><a href="https://open.spotify.com/artist/2FXC3k01G6Gw61bmprjgqS">Hozier</a></h3>
-            <img src="hoe.jpeg" alt="Hozier new album, Unreal Unearth">
+            <!-- Hozier -->
+            <div class="artist-container">
+                <div class="artist-description">
+                    <h3><a href="https://open.spotify.com/artist/2FXC3k01G6Gw61bmprjgqS">Hozier</a></h3>
+                    <p>Hozier caught my eye randomly  and I became obsessed. Not only are the beats to his songs satisfying to listen to, he is a lyrical genius. I really connected with his new EP, a song called Nobody's Soldier, while I was having a rough time. I listen to him when I need a little more quiet in my brain as I feel he speaks to my soul. </p>
+                </div>
+                <img src="hoe.jpeg" alt="Hozier new album, Unreal Unearth">
+            </div>
             
-            <h3><a href="https://open.spotify.com/artist/6qqNVTkY8uBg9cP3Jd7DAH">Billie Eilish</a></h3>
-            <img src="bill.jpeg" alt="Billie Eilish new album, Hit Me Hard and Soft">
+            <!-- Billie Eilish -->
+            <div class="artist-container">
+                <div class="artist-description">
+                    <h3><a href="https://open.spotify.com/artist/6qqNVTkY8uBg9cP3Jd7DAH">Billie Eilish</a></h3>
+                    <p>I had never been a big Billie Eilish fan before, I honestly did not like her music at all. With her new album Hit Me Hard and Soft it was different then all her other music and I instantly fell in love with it. My favorite songs on the album are L’AMOUR DE MA VIE being number one followed by SKINNY and CHIHIRO. </p>
+                </div>
+                <img src="bill.jpeg" alt="Billie Eilish new album, Hit Me Hard and Soft">
+            </div>
         </div>
     </section>
 
