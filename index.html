@@ -6,8 +6,10 @@
     <title>Personal Page</title>
   
     <!-- Google Font Link -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+   
+  <link href="https://fonts.googleapis.com/css?family=Arizonia" rel="stylesheet">
+  
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
     
     <style>
@@ -20,7 +22,7 @@
         }
 
         h1 {
-            font-family: "Sofia", sans-serif;
+            font-family: 'Arizonia';
             font-size: 50px;
             margin: 0;
             padding: 0;
@@ -31,14 +33,20 @@
         }
 
         hr {
-            border: 0;
-            border-top: 3px solid #fff;  /* White color for the line */
-            width: 300%;  /* Full width */
-            margin: 20px 0;  /* Some space above and below the line */
+     border: 0;
+    border-top: 3px solid #fff;  /* White color for the line */
+    width: 100vw;  /* Full width of the viewport (100% of the viewport width) */
+    margin: 5px 0;  /* Space above and below the line */
+    position: absolute;  /* Position it absolutely */
+    left: 0;  /* Align to the left edge of the screen */
+    top: auto;  /* Remove any unwanted vertical displacement */
+    right: 0;  /* Remove any right margin, and align to the screen edge */
+      /* Ensures the background is transparent */
+    height: 0;   
         }
 
         h2 {
-            font-family: "Space Mono", monospace;
+            font-family: 'Quicksand';font-size: 22px;
             font-size: 30px;
         }
 
@@ -80,10 +88,11 @@
             justify-content: flex-start; /* Align content to the left */
             align-items: flex-start; /* Align images and text to the top */
             padding: 60px 20px; /* Increased padding for more space */
-            height: 90vh;  /* Adjusted height for this section */
+            height: 100vh;  /* Adjusted height for this section */
         }
       
         #welcome-container {
+           font-family: 'Arizonia';font-size: 22px;
           display: flex;
           justify-content: center; /* Horizontally   center the header */
           align-items: center; /* Vertically center the header */
@@ -108,8 +117,12 @@
         }
 
         .right-img {
-            max-width: 300px; /* Limit the image size */
-            margin-top: 0; /* Remove extra margin above the images */
+           max-width: 300px; /* Limit the image size */
+    margin-top: 10; /* Remove extra margin above the images */
+    border: 5px solid white; /* Add a white border around the image */
+    border-radius: 10px; /* Optional: add rounded corners to the border */
+    padding: 5px; 
+        margin-bottom: 10px;
         }
 
         /* Music, Hobbies, and Books Section Styling */
@@ -155,7 +168,7 @@
             
             <!-- Text content under the welcome text -->
             <h2>About Me</h2>
-            <p>This is the "About Me" section. You can add more details about yourself here. lalalal ala al al al ala al al ala al al al ala la al al ala la la al ala al alala al al ala la al al ala al al ala al ala lal al ala la ala la lal a alalalal ala la la al ala al ala al al ala la al ala la al ala al al ala la al ala la al alal lalal aal ala la al al ala la al al ala al al al ala la al ala la al al ala la al al ala la al al ala la al al ala la al al ala la al ala la </p>
+            <p>HELLO, My name is Mia Krzysztalowicz ! I am a second year student at the University of Waterloo studying global business and digital arts. By my last name you can probably guess that I am Polish though I can understand a lot more than I can speak. I grew up in Burlington but my parents just recently moved to wawa to run their own motel business. So I am here alone navigating Kitchener/Waterloo alone while commuting to Stratford since that is where my program is based. I love to spend time with my friends when I am not completing school work or working at urban behavior on the weekends. I played soccer for 7 years of my life but had an unfortunate falling out with the sport. I am working on fixing that relationship by joining soccer intramurals through the university. I also enjoy reading, listening to music and love a variety of artist hobbies! Let's take a look and explore!  </p>
         </div>
 
         <!-- Image container with images placed to the right -->
