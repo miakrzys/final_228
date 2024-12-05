@@ -189,6 +189,7 @@
 
         #music {
             background-color: #8562a3;
+            padding: 40px 10px; 
         }
 
         #hobbies {
@@ -205,6 +206,7 @@
             align-items: center; /* Vertically align items */
             margin-bottom: 20px; /* Space between the artist sections */
             flex-direction: row-reverse; /* Swap image and text, text comes first */
+          width: 100%;
         }
 
         .artist-container img {
@@ -225,15 +227,13 @@
 
         /* Style for the paragraph container */
         .artist-description {
-            max-width: 350px; /* Control paragraph width */
-            margin-left: 20px; /* Space between text and image */
             font-size: 16px;
             color: white;
             line-height: 1.5;
-        }
-
-
-
+            margin-left: 20px;
+            width: 100%; /* Allow text container to stretch to full width */
+            padding-right: 10px; /* Small padding to avoid text touching the edge */
+    }
         /* Hobbies Section */
         #hobbies {
             background-color: #4d97b3;
