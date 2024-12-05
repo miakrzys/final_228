@@ -134,6 +134,38 @@
           align-items: center; 
         }
     
+       #music {
+            background-color: #8562a3;
+            padding: 40px 10px;
+            width: 100%; 
+            box-sizing: border-box; 
+        }
+      
+      .artist-container {
+            display: flex;
+            align-items: center; 
+            margin-bottom: 20px; 
+            width: 100%;
+        }
+      
+      .artist-container img {
+            max-width: 250px; /* Set a consistent image size */
+            margin-left: 20px; /* Add space between the image and text */
+            border: 5px solid #3d184d;
+            border-radius: 10px;
+            padding: 5px;
+          
+        }
+      
+       /* Style for the paragraph container */
+        .artist-description {
+            font-size: 16px;
+            color: white;
+            line-height: 1.5;
+            margin-left: 20px;
+            flex-grow: 1; /* Allow the text area to grow and fill the space */
+            width: auto; /* Ensure the description takes up available width */
+    }
 
             #music img {
             max-width: 300px;
@@ -141,6 +173,7 @@
             border: 5px solid #3d184d;
             border-radius: 10px;
             padding: 5px;
+            float: left;
         }
 
         .image-stack {
@@ -187,10 +220,7 @@
             height: 120vh;
         }
 
-        #music {
-            background-color: #8562a3;
-            padding: 40px 10px; 
-        }
+      
 
         #hobbies {
             background-color: #4d97b3;
@@ -201,22 +231,7 @@
         }
 
         /* Music Section: Create containers for paragraphs */
-        .artist-container {
-            display: flex; /* Display the elements horizontally */
-            align-items: center; /* Vertically align items */
-            margin-bottom: 20px; /* Space between the artist sections */
-            flex-direction: row-reverse; /* Swap image and text, text comes first */
-          width: 100%;
-        }
-
-        .artist-container img {
-            max-width: 250px; /* Set a consistent image size */
-            margin-left: 20px; /* Add space between the image and text */
-            border: 5px solid #3d184d;
-            border-radius: 10px;
-            padding: 5px;
-          
-        }
+        
 
         .artist-container h3 {
             margin: 0;
@@ -225,15 +240,7 @@
             color: #3d184d;
         }
 
-        /* Style for the paragraph container */
-        .artist-description {
-            font-size: 16px;
-            color: white;
-            line-height: 1.5;
-            margin-left: 20px;
-            width: 100%; /* Allow text container to stretch to full width */
-            padding-right: 10px; /* Small padding to avoid text touching the edge */
-    }
+    
         /* Hobbies Section */
         #hobbies {
             background-color: #4d97b3;
