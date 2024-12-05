@@ -31,6 +31,7 @@
             font-size: 40px; /* Increased size for headings */
             margin: 40px 0 20px;
         }
+  
 
         p {
             font-family: "Trirong", serif;
@@ -89,6 +90,7 @@
             padding: 60px 40px; /* Increased padding for laptop view */
             height: auto;
             flex-wrap: wrap;
+            height: 120vh;
         }
       
         #welcome-container {
@@ -137,7 +139,8 @@
             background-color: #8562a3;
             padding: 40px 10px;
             width: 100%; 
-            box-sizing: border-box; 
+            box-sizing: border-box;
+            height: 120vh;
         }
       
       .artist-container {
@@ -217,90 +220,57 @@
           margin: 0;
           margin-top: 28px;
         }
-
-        #music, #hobbies, #books {
-            padding: 40px 20px;
-            height: 120vh;
-        }
-
       
-
-        #hobbies {
-            background-color: #4d97b3;
-        }
-
-        #books {
-            background-color: #e879d2;
-        }
-
-        /* Music Section: Create containers for paragraphs */
-        
-
-        .artist-container h3 {
+       .artist-container h3 {
             margin: 0;
             padding: 0;
             font-size: 19px;
             color: #3d184d;
         }
 
-    
-        /* Hobbies Section */
         #hobbies {
             background-color: #4d97b3;
-            padding: 60px 40px;
+            padding: 60px 20px;
+            width: 100%; 
+            height: 120vh;
+            box-sizing: border-box; 
         }
+      
+        #hobbies p {
+              width: 100%;
+              margin: 0;
+              padding: 0;
+              font-size: 20px;
+              color: white;
+              line-height: 1.8;
+              max-width: 1200px; /* You can adjust this value to prevent the text from becoming too stretched */
+              margin-left: auto;
+              margin-right: auto;
+          }
+          /* Make the images the same size and arrange them in a row */
+          #hobbies .hobby-images {
+              display: flex;
+              justify-content: space-between; /* Spread images across the page */
+              gap: 20px; /* Space between images */
+              flex-wrap: wrap; /* Wrap images to the next line if necessary */
+          }
+
+          #hobbies .hobby-images img {
+              max-width: 23%; /* Make the images take up about 1/4 of the container width */
+              height: auto; /* Maintain aspect ratio */
+              border-radius: 10px; /* Optional: rounded corners */
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add subtle shadow */
+          }
 
         /* Books Section */
         #books {
             background-color: #e879d2;
-            padding: 60px 40px;
+            padding: 40px 20px;
+            height: 120vh;
         }
+    
 
-        /* Common Section Heading Styling */
-        h2 {
-            font-size: 40px;
-            font-family: 'Quicksand', sans-serif;
-            color: #3d692a;
-            margin-bottom: 40px;
-        }
-
-        /* Responsive Layout for smaller screens */
-        @media (max-width: 1200px) {
-            body {
-                font-size: 18px; /* Adjust for medium desktop screens */
-            }
-
-            nav a {
-                font-size: 18px;
-            }
-
-            h1 {
-                font-size: 70px; /* Adjust title size for medium desktops */
-            }
-
-            #about-me .text-content {
-                max-width: 600px;
-            }
-
-            .artist-container {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .artist-container img {
-                max-width: 300px; /* Adjust image sizes */
-            }
-
-            .artist-description {
-                max-width: 500px; /* Adjust text size and width */
-            }
-        
-
-
-            .right-img {
-                max-width: 300px;
-            }
-        }
+       
     </style>
 </head>
 <body> 
@@ -321,7 +291,7 @@
             </div>
             <hr> <!-- Line under the welcome text -->
             <h2 style="color:#3d692a;">About Me</h2>
-            <p>HELLO, My name is Mia Krzysztalowicz! I am a second-year student at the University of Waterloo studying global business and digital arts. By my last name, you can probably guess that I am Polish, though I can understand a lot more than I can speak. I grew up in Burlington, but my parents just recently moved to Wawa to run their own motel business. So, I am here alone navigating Kitchener/Waterloo alone while commuting to Stratford since that is where my program is based. I love to spend time with my friends when I am not completing schoolwork or working at Urban Behavior on the weekends. I played soccer for 7 years of my life but had an unfortunate falling out with the sport. I am working on fixing that relationship by joining soccer intramurals through the university. I also enjoy reading, listening to music, and adore a variety of hobbies! Let's take a look and explore!</p>
+            <p>HELLO, My name is Mia Krzysztalowicz! I am a second-year student at the University of Waterloo studying global business and digital arts. By my last name, you can probably guess that I am Polish, though I can understand a lot more than I can speak. I grew up in Burlington, but my parents just recently moved to Wawa to run their own motel business. So, I am here alone navigating Kitchener/Waterloo alone while commuting to Stratford since that is where my program is based. I love to spend time with my friends when I am not completing schoolwork or working at Urban Behavior on the weekends. I played soccer for 7 years of my life but had an unfortunate falling out with the sport. I am working on fixing that relationship by joining soccer intramurals through the university. I also enjoy reading, listening to music, and adore a variety of artisit hobbies! Let's take a look and explore!</p>
             <div class="contact-container">
                 <h2>Contact:</h2>
                 <a href="mailto:mkrzyszt@uwaterloo.ca">mkrzyszt@uwaterloo.ca</a>
@@ -369,7 +339,16 @@
     <!-- Hobbies Section -->
     <section id="hobbies">
         <h2 style="color:#1d4cab">Hobbies</h2>
-        <p>This is the "Hobbies" section. Share your hobbies and interests with your visitors here.</p>
+        <p>I have always been an artistic person finding passion in so many different art forms that let me express my creativity. It started with painting, cheap acrylic paint on canvas all from dollarama is all I needed to enjoy some freedom. Collaging with anything I could find around the house, stickers and what others thought to be garbage. Then I found clay and pottery where I took a class during an overnight camp once and fell in love. I was always making string bracelets at camps and that turned into jewelry making with beads and wire. I take great pride in the jewelry I wear when people compliment it. I want to be able to explore every single art form that is out there! 
+</p>
+      
+    <div class="hobby-images">
+      <img src="jewl.jpeg" alt="making earrings">
+      <img src="mess.jpeg" alt="art room floor coverd in art supplies">
+      <img src="moon.JPG" alt="digital art of crecent moon with astriods">
+      <img src="pot.jpeg" alt="star cup pottery, un-fired">
+    </div>
+      
     </section>
 
     <!-- Books Section -->
