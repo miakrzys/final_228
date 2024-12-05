@@ -135,53 +135,104 @@
         }
     
 
-        /* Music Section */
-        #music {
-            background-color: #8562a3;
-            padding: 60px 40px; /* Increased padding for larger screen */
-        }
-
-        #music h2, #music h4 {
-            color: #3d184d;
-            font-size: 40px; /* Increased font size */
-            margin-bottom: 40px;
-        }
-
-        .image-stack {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .artist-container {
-            display: flex;
-            align-items: center;
-            margin-bottom: 40px;
-            width: 100%;
-            max-width: 1200px;
-        }
-
-        .artist-container img {
-            max-width: 350px;
-            margin-left: 40px;
+            #music img {
+            max-width: 300px;
+            margin-bottom: 8px;
             border: 5px solid #3d184d;
             border-radius: 10px;
             padding: 5px;
         }
 
-        .artist-description {
-            font-size: 20px;
-            color: white;
-            line-height: 1.6;
-            margin-left: 40px;
-            max-width: 600px;
+        .image-stack {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .image-stack h3 {
+            text-decoration: underline;
+            margin: 0;
+            padding: 0;
+            font-size: 19px;
+            line-height: 1;
+            margin-left: 300px;
+            color:#3d184d;
+        }
+
+        /* Music Section Link Styles */
+        #music a {
+            color: #3d184d; /* Default color for links */
+            text-decoration: none; /* Remove underline by default */
+        }
+
+        #music a:hover {
+            color: #e879d2; /* Change color when the link is hovered */
+            text-decoration: underline; /* Add underline on hover */
+        }
+
+        #music a:visited {
+            color: #e3baf5; /* Change color after the link has been visited */
+        }
+
+        #music a:active {
+            color: #3d184d; /* Change color when the link is active (clicked) */
+        }
+
+        #music h2 {
+            margin: 0;
+        }
+
+        #music, #hobbies, #books {
+            padding: 40px 20px;
+            height: 120vh;
+        }
+
+        #music {
+            background-color: #8562a3;
+        }
+
+        #hobbies {
+            background-color: #4d97b3;
+        }
+
+        #books {
+            background-color: #e879d2;
+        }
+
+        /* Music Section: Create containers for paragraphs */
+        .artist-container {
+            display: flex; /* Display the elements horizontally */
+            align-items: center; /* Vertically align items */
+            margin-bottom: 20px; /* Space between the artist sections */
+            flex-direction: row-reverse; /* Swap image and text, text comes first */
+        }
+
+        .artist-container img {
+            max-width: 250px; /* Set a consistent image size */
+            margin-left: 20px; /* Add space between the image and text */
+            border: 5px solid #3d184d;
+            border-radius: 10px;
+            padding: 5px;
+          
         }
 
         .artist-container h3 {
-            font-size: 30px;
+            margin: 0;
+            padding: 0;
+            font-size: 19px;
             color: #3d184d;
-            margin-bottom: 10px;
         }
+
+        /* Style for the paragraph container */
+        .artist-description {
+            max-width: 350px; /* Control paragraph width */
+            margin-left: 20px; /* Space between text and image */
+            font-size: 16px;
+            color: white;
+            line-height: 1.5;
+        }
+
+
 
         /* Hobbies Section */
         #hobbies {
