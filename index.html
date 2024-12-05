@@ -128,13 +128,6 @@
             color: #3d184d;
         }
 
-        /* Contact Styling */
-        .contact-container {
-          display: flex;
-          align-items: center; 
-        }
-     
-
         /* Music Section */
         #music {
             background-color: #8562a3;
@@ -159,11 +152,12 @@
             margin-bottom: 40px;
             width: 100%;
             max-width: 1200px;
+            flex-direction: row-reverse; /* Swap order of text and image */
         }
 
         .artist-container img {
             max-width: 350px;
-            margin-left: 40px;
+            margin-left: 40px; /* Adds space between image and text */
             border: 5px solid #3d184d;
             border-radius: 10px;
             padding: 5px;
@@ -173,7 +167,7 @@
             font-size: 20px;
             color: white;
             line-height: 1.6;
-            margin-left: 40px;
+            margin-right: 40px; /* Adds space between text and image */
             max-width: 600px;
         }
 
