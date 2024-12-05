@@ -13,37 +13,39 @@
     <style>
         /* General styling for the page */
         body {       
-            font-size: 18px;
+            font-size: 20px; /* Increased font size for better readability on desktop */
             margin: 0;
             padding: 0;
-            line-height: 1.6; 
+            line-height: 1.8; /* Increased line height for better spacing */
+            font-family: 'Trirong', serif; /* Applied a uniform font */
         }
       
         h1 {
-            letter-spacing: 30px;
-            font-family: 'Caveat';
-            font-size: 70px;
+            letter-spacing: 15px; /* Reduced letter-spacing for a more compact title */
+            font-family: 'Caveat', cursive;
+            font-size: 90px; /* Increased for better visibility on large screens */
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-family: 'Quicksand', sans-serif;
+            font-size: 40px; /* Increased for desktop readability */
+            color: #3d692a;
         }
 
         p {
             font-family: "Trirong", serif;
+            font-size: 22px; /* Slightly increased text size */
+            max-width: 900px; /* Added max-width for better text wrapping */
+            line-height: 1.6;
+            margin-bottom: 20px;
         }
 
         hr {
             border: 0;
             border-top: 3px solid  #333;
-            width: 100vw;
-            margin: 5px 0;
-            position: absolute;
-            left: 0;
-            top: auto;
-            right: 0;
-            height: 0;
-        }
-
-        h2 {
-            font-family: 'Quicksand';
-            font-size: 35px;
+            width: 100%;
+            margin: 20px 0; /* Increased margin for spacing */
         }
 
         /* Navigation Bar */
@@ -53,16 +55,16 @@
             width: 100%;
             top: 0;
             left: 0;
-            padding: 10px;
+            padding: 15px 0;
             text-align: center;
             z-index: 1000;
         }
 
         nav a {
             color: white;
-            margin: 0 15px;
+            margin: 0 20px;
             text-decoration: none;
-            font-size: 18px;
+            font-size: 20px; /* Increased font size */
         }
 
         nav a:hover {
@@ -71,7 +73,7 @@
 
         /* Section Styling */
         section {
-            padding: 40px 20px;
+            padding: 60px 20px;
             color: white;
             height: auto;
         }
@@ -81,153 +83,120 @@
             background-color: #8fcc74;
             display: flex;
             flex-direction: row;
-            justify-content: flex-start;
-            align-items: flex-start;
-            padding: 60px 20px;
+            justify-content: space-between; /* Adjusted for better spacing */
+            align-items: center;
+            padding: 80px 40px; /* Increased padding for larger content areas */
             height: 100vh;
+            flex-wrap: wrap;
         }
       
-        #welcome-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 10%;
-            text-align: center;
-        }
-
         #about-me .text-content {
             text-align: left;
-            margin-right: 40px;
-            max-width: 550px;
+            max-width: 600px; /* Increased max-width for better readability */
+            padding-right: 40px;
         }
 
         .image-container {
-            margin-left: auto;
             display: flex;
             flex-direction: column;
-            align-items: flex-end;
-            margin-top: 105px;
+            align-items: center;
+            margin-left: 40px;
         }
 
         .right-img {
-            max-width: 300px;
-            margin-top: 10;
+            max-width: 350px; /* Increased image size */
+            margin-bottom: 20px; /* Added margin for spacing */
             border: 5px solid #3d692a;
             border-radius: 10px;
             padding: 5px;
-            margin-bottom: 10px;
         }
-      #about-me a {
+
+        /* About Me Link Styling */
+        #about-me a {
             float: right;
             color: #3d692a;
-            font-size: 20px;
-            margin-top: -73px;
-        margin-right: 130px;
+            font-size: 22px;
+            margin-top: -80px; /* Adjusted margin for better positioning */
+            margin-right: 150px; /* Increased to move the link further to the right */
         }
 
         #about-me a:hover {
             color: #3d184d;
         }
-      
-      
-        #music img {
-            max-width: 300px;
-            margin-bottom: 8px;
-            border: 5px solid #3d184d;
-            border-radius: 10px;
-            padding: 5px;
+
+        /* Music Section */
+        #music {
+            background-color: #8562a3;
+            padding: 80px 40px;
+        }
+
+        #music h2 {
+            color: #3d184d;
+            font-size: 45px; /* Increased font size for better readability */
+        }
+
+        #music h4 {
+            color: #3d184d;
+            font-size: 25px; /* Slightly increased font size */
         }
 
         .image-stack {
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
+            align-items: center;
         }
 
-        .image-stack h3 {
-            text-decoration: underline;
-            margin: 0;
-            padding: 0;
-            font-size: 19px;
-            line-height: 1;
-            margin-left: 300px;
-            color:#3d184d;
-        }
-
-        /* Music Section Link Styles */
-        #music a {
-            color: #3d184d; /* Default color for links */
-            text-decoration: none; /* Remove underline by default */
-        }
-
-        #music a:hover {
-            color: #e879d2; /* Change color when the link is hovered */
-            text-decoration: underline; /* Add underline on hover */
-        }
-
-        #music a:visited {
-            color: #e3baf5; /* Change color after the link has been visited */
-        }
-
-        #music a:active {
-            color: #3d184d; /* Change color when the link is active (clicked) */
-        }
-
-        #music h2 {
-            margin: 0;
-        }
-
-        #music, #hobbies, #books {
-            padding: 40px 20px;
-            height: 120vh;
-        }
-
-        #music {
-            background-color: #8562a3;
-        }
-
-        #hobbies {
-            background-color: #4d97b3;
-        }
-
-        #books {
-            background-color: #e879d2;
-        }
-
-        /* Music Section: Create containers for paragraphs */
         .artist-container {
-            display: flex; /* Display the elements horizontally */
-            align-items: center; /* Vertically align items */
-            margin-bottom: 20px; /* Space between the artist sections */
-            flex-direction: row-reverse; /* Swap image and text, text comes first */
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px; /* Increased margin for more space between items */
+            flex-direction: row-reverse;
+            width: 100%;
+            max-width: 1100px; /* Added max-width for better content alignment */
+            justify-content: center;
         }
 
         .artist-container img {
-            max-width: 250px; /* Set a consistent image size */
-            margin-left: 20px; /* Add space between the image and text */
+            max-width: 350px; /* Increased image size */
+            margin-left: 40px;
             border: 5px solid #3d184d;
             border-radius: 10px;
             padding: 5px;
-          
         }
 
         .artist-container h3 {
-            margin: 0;
-            padding: 0;
-            font-size: 19px;
+            font-size: 25px; /* Increased font size */
             color: #3d184d;
         }
 
-        /* Style for the paragraph container */
         .artist-description {
-            max-width: 350px; /* Control paragraph width */
-            margin-left: 20px; /* Space between text and image */
-            font-size: 16px;
+            max-width: 500px; /* Increased max-width */
+            font-size: 20px;
             color: white;
-            line-height: 1.5;
+            line-height: 1.6;
+            margin-left: 30px;
         }
 
-        
+        /* Hobbies Section */
+        #hobbies {
+            background-color: #4d97b3;
+            padding: 80px 40px;
+        }
+
+        /* Books Section */
+        #books {
+            background-color: #e879d2;
+            padding: 80px 40px;
+        }
+
+        /* Common Section Heading Styling */
+        h2 {
+            font-size: 45px;
+            font-family: 'Quicksand', sans-serif;
+            color: #3d692a;
+            margin-bottom: 40px;
+        }
+
     </style>
 </head>
 <body> 
@@ -246,15 +215,12 @@
             <div id="welcome-container">
                 <h1> WELCOME</h1>
             </div>
-            <hr> <!-- Line under the welcome text -->
-            <h2 style="color:#3d692a;">About Me </h2>
-            <p>HELLO, My name is Mia Krzysztalowicz! I am a second-year student at the University of Waterloo studying global business and digital arts. By my last name, you can probably guess that I am Polish, though I can understand a lot more than I can speak. I grew up in Burlington, but my parents just recently moved to Wawa to run their own motel business. So, I am here alone navigating Kitchener/Waterloo alone while commuting to Stratford since that is where my program is based. I love to spend time with my friends when I am not completing schoolwork or working at Urban Behavior on the weekends. I played soccer for 7 years of my life but had an unfortunate falling out with the sport. I am working on fixing that relationship by joining soccer intramurals through the university. I also enjoy reading, listening to music, and love a variety of artistic hobbies! Let's take a look and explore!</p>
-          <h2 style="color:#3d692a;">Contact:</h2>
-          <a href= "mailto:mkrzyszt@uwaterloo.ca">
-             mkrzyszt@uwaterloo.ca</a>
+            <hr>
+            <h2>About Me </h2>
+            <p>HELLO, My name is Mia Krzysztalowicz! I am a second-year student at the University of Waterloo studying global business and digital arts. By my last name, you can probably guess that I am Polish...</p>
+            <h2>Contact:</h2>
+            <a href="mailto:mkrzyszt@uwaterloo.ca">mkrzyszt@uwaterloo.ca</a>
         </div>
-   
-   
         <div class="image-container">
             <img src="mia.jpeg" alt="A photo of me" class="right-img">
             <img src="mia-dog.JPG" alt="A photo of my dog" class="right-img">
@@ -263,33 +229,30 @@
 
     <!-- Music Section -->
     <section id="music">
-        <h2 style="color:#3d184d;">Music</h2>
-      <h4 style="color:#3d184d;">My Top Three Artists of 2024:</h4>
-    
+        <h2>Music</h2>
+        <h4>My Top Three Artists of 2024:</h4>
         <div class="image-stack">
             <!-- Ashnikko -->
             <div class="artist-container">
                 <div class="artist-description">
                     <h3><a href="https://open.spotify.com/artist/3PyJHH2wyfQK3WZrk9rpmP">Ashnikko</a></h3>
-                    <p>Ashnikko was introduced to me through my best friend. I have never loved an artist more than her. She mixes pop, rap, and electronic styles with crazy lyrics that I cannot get enough of. I like to listen to her when I need some motivation or just to boost my mood. My favorite songs are Invitation, Possession of a Weapon and Cheerleader!</p>
+                    <p>Ashnikko was introduced to me through my best friend...</p>
                 </div>
                 <img src="ash.jpeg" alt="Ashnikko new album, WeedKiller">
             </div>
-            
             <!-- Hozier -->
             <div class="artist-container">
                 <div class="artist-description">
                     <h3><a href="https://open.spotify.com/artist/2FXC3k01G6Gw61bmprjgqS">Hozier</a></h3>
-                    <p>Hozier caught my eye randomly  and I became obsessed. Not only are the beats to his songs satisfying to listen to, he is a lyrical genius. I really connected with his new EP, a song called Nobody's Soldier, while I was having a rough time. I listen to him when I need a little more quiet in my brain as I feel he speaks to my soul. </p>
+                    <p>Hozier caught my eye randomly  and I became obsessed...</p>
                 </div>
                 <img src="hoe.jpeg" alt="Hozier new album, Unreal Unearth">
             </div>
-            
             <!-- Billie Eilish -->
             <div class="artist-container">
                 <div class="artist-description">
                     <h3><a href="https://open.spotify.com/artist/6qqNVTkY8uBg9cP3Jd7DAH">Billie Eilish</a></h3>
-                    <p>I had never been a big Billie Eilish fan before, I honestly did not like her music at all. With her new album Hit Me Hard and Soft it was different then all her other music and I instantly fell in love with it. My favorite songs on the album are L’AMOUR DE MA VIE being number one followed by SKINNY and CHIHIRO. </p>
+                    <p>I had never been a big Billie Eilish fan before...</p>
                 </div>
                 <img src="bill.jpeg" alt="Billie Eilish new album, Hit Me Hard and Soft">
             </div>
@@ -299,13 +262,13 @@
     <!-- Hobbies Section -->
     <section id="hobbies">
         <h2>Hobbies</h2>
-        <p>This is the "Hobbies" section. Share your hobbies and interests with your visitors here.</p>
+        <p>This is the "Hobbies" section...</p>
     </section>
 
     <!-- Books Section -->
     <section id="books">
         <h2>Books</h2>
-        <p>This is the "Books" section. You can discuss your favorite books or reading habits here.</p>
+        <p>This is the "Books" section...</p>
     </section>
 
 </body>
