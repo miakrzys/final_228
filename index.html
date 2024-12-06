@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Page</title>
   
-    <!-- Google Font Link -->
+  
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
     
     <style>
-        /* General styling for the page */
+      
+/* Gen */
         body {
-            font-size: 20px; /* Increased font size for better readability */
+            font-size: 20px;
             margin: 0;
             padding: 0;
             line-height: 1.8;
@@ -22,21 +23,21 @@
         h1 {
             letter-spacing: 30px;
             font-family: 'Caveat', cursive;
-            font-size: 80px; /* Increased for laptop */
+            font-size: 80px; 
             margin: 40px 0;
         }
 
         h2 {
             font-family: 'Quicksand', sans-serif;
-            font-size: 40px; /* Increased size for headings */
+            font-size: 40px; 
             margin: 40px 0 20px;
         }
   
 
         p {
             font-family: "Trirong", serif;
-            font-size: 20px; /* Adjusted for better readability */
-            max-width: 1000px; /* Prevent text from being too stretched */
+            font-size: 20px; 
+            max-width: 1000px; 
             margin-bottom: 20px;
             line-height: 1.8;
         }
@@ -49,8 +50,14 @@
             position: relative;
             z-index: 0;
         }
+      
+       section {
+            padding: 60px 20px;
+            color: white;
+            height: auto;
+        }
 
-        /* Navigation Bar */
+/* Nav Bar */
         nav {
             background-color: #333;
             position: fixed;
@@ -64,7 +71,7 @@
 
         nav a {
             color: white;
-            margin: 0 30px; /* Increased spacing for navigation */
+            margin: 0 30px; 
             text-decoration: none;
             font-size: 20px;
         }
@@ -73,14 +80,7 @@
             text-decoration: underline;
         }
 
-        /* Section Styling */
-        section {
-            padding: 60px 20px;
-            color: white;
-            height: auto;
-        }
-
-        /* About Me Section Styling */
+/* About Me */
         #about-me {
             background-color: #8fcc74;
             display: flex;
@@ -129,13 +129,13 @@
             color: #3d184d;
         }
 
-        /* Contact Styling */
         .contact-container {
           color: #3d692a;
           display: flex;
           align-items: center; 
         }
     
+/* Music */
        #music {
             background-color: #8562a3;
             padding: 40px 10px;
@@ -163,14 +163,13 @@
             margin-top: -10px;
         }
       
-       /* Style for the paragraph container */
         .artist-description {
             font-size: 16px;
             color: white;
             line-height: 1.5;
             margin-left: 20px;
-            flex-grow: 1; /* Allow the text area to grow and fill the space */
-            width: auto; /* Ensure the description takes up available width */
+            flex-grow: 1; 
+            width: auto; 
     }
 
             #music img {
@@ -195,26 +194,25 @@
             font-size: 19px;
             line-height: 1;
             margin-left: 300px;
-            color:#3d184d;
+            color: #3d184d;
         }
 
-        /* Music Section Link Styles */
         #music a {
-            color: #3d184d; /* Default color for links */
-            text-decoration: none; /* Remove underline by default */
+            color: #3d184d; 
+            text-decoration: none; 
         }
 
         #music a:hover {
-            color: #e879d2; /* Change color when the link is hovered */
-            text-decoration: underline; /* Add underline on hover */
+            color: #e879d2; 
+            text-decoration: underline; 
         }
 
         #music a:visited {
-            color: #e3baf5; /* Change color after the link has been visited */
+            color: #e3baf5; 
         }
 
         #music a:active {
-            color: #3d184d; /* Change color when the link is active (clicked) */
+            color: #3d184d; 
         }
 
         #music h2 {
@@ -229,6 +227,7 @@
             color: #3d184d;
         }
 
+/* Hobbies */
         #hobbies {
             background-color: #4d97b3;
             padding: 60px 20px;
@@ -249,49 +248,50 @@
               margin-right: auto;
               margin-bottom: 50px;
           }
-          /* Make the images the same size and arrange them in a row */
+          
           #hobbies .hobby-images {
               display: flex;
-              justify-content: space-between; /* Spread images across the page */
-              gap: 20px; /* Space between images */
-              flex-wrap: wrap; /* Wrap images to the next line if necessary */
+              justify-content: space-between; 
+              gap: 20px; 
+              flex-wrap: wrap; 
           }
 
           #hobbies .hobby-images img {
-              max-width: 20%; /* Make the images take up about 1/4 of the container width */
-              height: auto; /* Maintain aspect ratio */
+              max-width: 20%; 
+              height: auto; 
               border-radius: 10px;
               border: 4px solid #1d4cab;
               padding: 10;
           }
 
-          /* Books Section */
+/* Books */
       #books {
           background-color: #e879d2;
           padding: 40px 20px;
           height: 120vh;
-          overflow: hidden; /* Prevent content from overflowing */
+          overflow: hidden; 
       }
 
-      /* Books Table Styling */
+/* Books Table */
       table {
-          width: 70%; /* Reduce the width to 70% of the container */
+          width: 70%; 
           border-collapse: collapse;
-          float: left; /* Center the table */
+          float: left; 
           table-layout: fixed;
           color: black;
+          height: 200px;
       }
 
       th, td {
-          padding: 4px 8px; /* Reduced padding for a more compact table */
+          padding: 9px 12px; 
           text-align: left;
-          font-size: 14px; /* Reduce the font size */
+          font-size: 16px;
           border: 1px solid #d916bb;
           line-height: 1.5;
       }
 
       th {
-          background-color: #d916bb; /* Light background for header */
+          background-color: #d916bb; 
           font-weight: bold;
       }
 
@@ -299,20 +299,20 @@
           background-color: #fcbdf3;
       }
       
-          th:nth-child(1), td:nth-child(1) { /* Title column */
-        width: 15%; /* Adjust this as needed */
+    th:nth-child(1), td:nth-child(1) { 
+        width: 15%; 
     }
 
-    th:nth-child(2), td:nth-child(2) { /* Author column */
-        width: 15%; /* Adjust this as needed */
+    th:nth-child(2), td:nth-child(2) { 
+        width: 15%; 
     }
 
-    th:nth-child(3), td:nth-child(3) { /* Summary column */
-        width: 50%; /* Make this column wider */
+    th:nth-child(3), td:nth-child(3) { 
+        width: 50%; 
     }
 
-    th:nth-child(4), td:nth-child(4) { /* Rating column */
-        width: 30%; /* Adjust this as needed */
+    th:nth-child(4), td:nth-child(4) { 
+        width: 30%; 
     }
      
       #books .book-images {
@@ -336,7 +336,7 @@
 </head>
 <body> 
   
-    <!-- Navigation Links -->
+<!-- Nav -->
     <nav>
         <a href="#about-me">About Me</a>
         <a href="#music">Music</a>
@@ -344,15 +344,15 @@
         <a href="#books">Books</a>
     </nav>
 
-    <!-- About Me Section -->
+<!-- About Me  -->
     <section id="about-me">
         <div class="text-content">
             <div id="welcome-container">
                 <h1>WELCOME</h1>
             </div>
-            <hr> <!-- Line under the welcome text -->
+            <hr> 
             <h2 style="color:#3d692a;">About Me</h2>
-            <p>HELLO, My name is Mia Krzysztalowicz! I am a second-year student at the University of Waterloo studying global business and digital arts. By my last name, you can probably guess that I am Polish, though I can understand a lot more than I can speak. I grew up in Burlington, but my parents just recently moved to Wawa to run their own motel business. So, I am here alone navigating Kitchener/Waterloo alone while commuting to Stratford since that is where my program is based. I love to spend time with my friends when I am not completing schoolwork or working at Urban Behavior on the weekends. I played soccer for 7 years of my life but had an unfortunate falling out with the sport. I am working on fixing that relationship by joining soccer intramurals through the university. I also enjoy reading, listening to music, and adore a variety of artisit hobbies! Let's take a look and explore!</p>
+            <p>HELLO, My name is Mia Krzysztalowicz! I am a second-year student at the University of Waterloo studying global business and digital arts. By my last name, you can probably guess that I am Polish, though I can understand a lot more than I can speak. I grew up in Burlington, but my parents just recently moved to Wawa to run their own motel business. So, I am here alone navigating Kitchener/Waterloo alone while commuting to Stratford since that is where my program is based. I love to spend time with my friends when I am not completing schoolwork or working at Urban Behavior on the weekends. I played soccer for 7 years of my life but had an unfortunate falling out with the sport. I am working on fixing that relationship by joining soccer intramurals through the university. I also enjoy reading, listening to music, and adore a variety of artistic hobbies! Let's take a look and explore!</p>
             <div class="contact-container">
                 <h2>Contact:</h2>
                 <a href="mailto:mkrzyszt@uwaterloo.ca">mkrzyszt@uwaterloo.ca</a>
@@ -365,12 +365,12 @@
         </div>
     </section>
 
-    <!-- Music Section -->
+<!-- Music -->
     <section id="music">
         <h2 style="color:#3d184d;">Music</h2>
         <h4>My Top Three Artists of 2024:</h4>
         <div class="image-stack">
-            <!-- Ashnikko -->
+            
             <div class="artist-container">
                 <div class="artist-description">
                     <h3><a href="https://open.spotify.com/artist/3PyJHH2wyfQK3WZrk9rpmP">#1 Ashnikko</a></h3>
@@ -378,7 +378,7 @@
                 </div>
                 <img src="ash.jpeg" alt="Ashnikko new album, WeedKiller">
             </div>
-            <!-- Hozier -->
+           
             <div class="artist-container">
                 <div class="artist-description">
                     <h3><a href="https://open.spotify.com/artist/2FXC3k01G6Gw61bmprjgqS">#2 Hozier</a></h3>
@@ -386,7 +386,7 @@
                 </div>
                 <img src="hoe.jpeg" alt="Hozier new album, Unreal Unearth">
             </div>
-            <!-- Billie Eilish -->
+         
             <div class="artist-container">
                 <div class="artist-description">
                     <h3><a href="https://open.spotify.com/artist/6qqNVTkY8uBg9cP3Jd7DAH">#3 Billie Eilish</a></h3>
@@ -397,7 +397,7 @@
         </div>
     </section>
 
-    <!-- Hobbies Section -->
+<!-- Hobbies -->
     <section id="hobbies">
         <h2 style="color:#1d4cab">Hobbies</h2>
         <p>I have always been an artistic person finding passion in so many different art forms that let me express my creativity. It started with painting, cheap acrylic paint on canvas all from dollarama is all I needed to enjoy some freedom. Collaging with anything I could find around the house, stickers and what others thought to be garbage. Then I found clay and pottery where I took a class during an overnight camp once and fell in love. I was always making string bracelets at camps and that turned into jewelry making with beads and wire. I take great pride in the jewelry I wear when people compliment it. I want to be able to explore every single art form that is out there! 
@@ -412,7 +412,7 @@
       
     </section>
 
-    <!-- Books Section -->
+<!-- Books -->
     <section id="books">
         <h2 style="color:#d916bb">Books</h2>
  <div class="table-container">
@@ -451,8 +451,6 @@
      </div>
   </div>
     </section>
-  
-  
 
 </body>
 </html>
