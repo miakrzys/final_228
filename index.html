@@ -264,32 +264,39 @@
               padding: 5;
           }
 
-        /* Books Section */
-        #books {
-            background-color: #e879d2;
-            padding: 40px 20px;
-            height: 120vh;
-        }
-      /* Books Section - Add padding to table cells */
-        table {
-            width: 90%;
-            border-collapse: collapse;
-        }
-
-        th, td {
-            padding: 5px; /* Increased padding for more space */
-            text-align: left;
-            border: 1px solid #d916bb; /* Add border for better visibility */
-        }
-
-        th {
-            background-color: #d916bb; /* Light background for header */
-            font-weight: bold;
-        }
-
-      td{
-        background-color: #fcbdf3;
+          /* Books Section */
+      #books {
+          background-color: #e879d2;
+          padding: 40px 20px;
+          height: 120vh;
+          overflow: hidden; /* Prevent content from overflowing */
       }
+
+      /* Books Table Styling */
+      table {
+          width: 60%; /* Reduce the width to 70% of the container */
+          border-collapse: collapse;
+          margin: 0 auto; /* Center the table */
+          table-layout: fixed; /* Fix the layout to avoid column resizing */
+      }
+
+      th, td {
+          padding: 4px 8px; /* Reduced padding for a more compact table */
+          text-align: left;
+          font-size: 14px; /* Reduce the font size */
+          border: 1px solid #d916bb;
+      }
+
+      th {
+          background-color: #d916bb; /* Light background for header */
+          font-weight: bold;
+      }
+
+      td {
+          background-color: #fcbdf3;
+      }
+
+
      
     </style>
 </head>
