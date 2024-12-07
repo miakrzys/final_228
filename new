@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Page</title>
+  
+  
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    
+    <style>
+      
+/* Gen */
+        body {
+            font-size: 20px;
+            margin: 0;
+            padding: 0;
+            line-height: 1.8;
+        }
+
+        h1 {
+            letter-spacing: 30px;
+            font-family: 'Caveat', cursive;
+            font-size: 80px; 
+            margin: 40px 0;
+        }
+
+        h2 {
+            font-family: 'Quicksand', sans-serif;
+            font-size: 40px; 
+            margin: 40px 0 20px;
+        }
+  
+
+        p {
+            font-family: "Trirong", serif;
+            font-size: 20px; 
+            max-width: 1000px; 
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        hr {
+            border: 0;
+            border-top: 3px solid #333;
+            width: 100%;
+            margin: 0;
+            position: relative;
+            z-index: 0;
+        }
+      
+       section {
+            padding: 60px 20px;
+            color: white;
+            height: auto;
+        }
+
+/* Nav Bar */
+        nav {
+            background-color: #333;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            padding: 20px 0;
+            text-align: center;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 30px; 
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+/* About Me */
+        #about-me {
+            background-color: #8fcc74;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 60px 40px; 
+            height: auto;
+            flex-wrap: wrap;
+            height: 120vh;
+        }
+      
+        #welcome-container {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        #about-me .text-content {
+            text-align: left;
+            margin-right: 60px;
+            max-width: 700px;
+        }
+
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .right-img {
+            max-width: 420px;
+            margin-bottom: 20px;
+            border: 5px solid #3d692a;
+            border-radius: 10px;
+            padding: 5px;
+        }
+
+        #about-me a {
+            color: #3d692a;
+            font-size: 20px;
+            margin-top: -20px;
+            margin-left: 10px;
+        }
+
+        #about-me a:hover {
+            color: #3d184d;
+        }
+
+        .contact-container {
+          color: #3d692a;
+          display: flex;
+          align-items: center; 
+        }
+    
+/* Music */
+       #music {
+            background-color: #8562a3;
+            padding: 40px 10px;
+            width: 100%; 
+            box-sizing: border-box;
+            height: 120vh;
+        }
+      
+      .artist-container {
+            display: flex;
+            align-items: center; 
+            margin-bottom: 5px; 
+            width: 100%;
+            flex-direction: row-reverse;
+            margin-top: -20px;
+        }
+      
+      .artist-container img {
+            max-width: 250px; 
+            margin-right: 10px; 
+            border: 5px solid #3d184d;
+            border-radius: 10px;
+            padding: 5px;
+            float: left;
+            margin-top: -10px;
+        }
+      
+        .artist-description {
+            font-size: 16px;
+            color: white;
+            line-height: 1.5;
+            margin-left: 20px;
+            flex-grow: 1; 
+            width: auto; 
+    }
+
+            #music img {
+            max-width: 300px;
+            margin-bottom: 8px;
+            border: 5px solid #3d184d;
+            border-radius: 10px;
+            padding: 5px;
+            float: left;
+        }
+
+        .image-stack {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .image-stack h3 {
+            text-decoration: underline;
+            margin: 0;
+            padding: 0;
+            font-size: 19px;
+            line-height: 1;
+            margin-left: 300px;
+            color: #3d184d;
+        }
+
+        #music a {
+            color: #3d184d; 
+            text-decoration: none; 
+        }
+
+        #music a:hover {
+            color: #e879d2; 
+            text-decoration: underline; 
+        }
+
+        #music a:visited {
+            color: #e3baf5; 
+        }
+
+        #music a:active {
+            color: #3d184d; 
+        }
+
+        #music h2 {
+          margin: 0;
+          margin-top: 28px;
+        }
+      
+       .artist-container h3 {
+            margin: 0;
+            padding: 0;
+            font-size: 19px;
+            color: #3d184d;
+        }
+
+/* Hobbies */
+        #hobbies {
+            background-color: #4d97b3;
+            padding: 60px 20px;
+            width: 100%; 
+            height: 120vh;
+            box-sizing: border-box; 
+        }
+      
+        #hobbies p {
+              width: 100%;
+              margin: 0;
+              padding: 0;
+              font-size: 20px;
+              color: white;
+              line-height: 1.8;
+              max-width: 1200px; 
+              margin-left: auto;
+              margin-right: auto;
+              margin-bottom: 50px;
+          }
+          
+          #hobbies .hobby-images {
+              display: flex;
+              justify-content: space-between; 
+              gap: 20px; 
+              flex-wrap: wrap; 
+          }
+
+          #hobbies .hobby-images img {
+              max-width: 20%; 
+              height: auto; 
+              border-radius: 10px;
+              border: 4px solid #1d4cab;
+              padding: 10;
+          }
+
+/* Books */
+      #books {
+          background-color: #e879d2;
+          padding: 40px 20px;
+          height: 120vh;
+          overflow: hidden; 
+      }
+
+/* Books Table */
+      table {
+          width: 70%; 
+          border-collapse: collapse;
+          float: left; 
+          table-layout: fixed;
+          color: black;
+          height: 200px;
+      }
+
+      th, td {
+          padding: 9px 12px; 
+          text-align: left;
+          font-size: 16px;
+          border: 1px solid #d916bb;
+          line-height: 1.5;
+      }
+
+      th {
+          background-color: #d916bb; 
+          font-weight: bold;
+      }
+
+      td {
+          background-color: #fcbdf3;
+      }
+      
+    th:nth-child(1), td:nth-child(1) { 
+        width: 15%; 
+    }
+
+    th:nth-child(2), td:nth-child(2) { 
+        width: 15%; 
+    }
+
+    th:nth-child(3), td:nth-child(3) { 
+        width: 50%; 
+    }
+
+    th:nth-child(4), td:nth-child(4) { 
+        width: 30%; 
+    }
+     
+      #books .book-images {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 40px;
+          padding-left: 130px;
+         
+      }
+
+    #books .book-images img {
+        max-width: 150px; 
+        border-radius: 10px;
+        border: 4px solid #d916bb; 
+        padding: 5px;
+        margin-top: -30px;
+    }
+     
+    </style>
+</head>
+<body> 
+  
+<!-- Nav -->
+    <nav>
+        <a href="#about-me">About Me</a>
+        <a href="#music">Music</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#books">Books</a>
+    </nav>
+
+<!-- About Me  -->
+    <section id="about-me">
+        <div class="text-content">
+            <div id="welcome-container">
+                <h1>WELCOME</h1>
+            </div>
+            <hr> 
+            <h2 style="color:#3d692a;">About Me</h2>
+            <p>HELLO, My name is Mia Krzysztalowicz! I am a second-year student at the University of Waterloo studying global business and digital arts. By my last name, you can probably guess that I am Polish, though I can understand a lot more than I can speak. I grew up in Burlington, but my parents just recently moved to Wawa to run their own motel business. So, I am here alone navigating Kitchener/Waterloo alone while commuting to Stratford since that is where my program is based. I love to spend time with my friends when I am not completing schoolwork or working at Urban Behavior on the weekends. I played soccer for 7 years of my life but had an unfortunate falling out with the sport. I am working on fixing that relationship by joining soccer intramurals through the university. I also enjoy reading, listening to music, and adore a variety of artistic hobbies! Let's take a look and explore!</p>
+            <div class="contact-container">
+                <h2>Contact:</h2>
+                <a href="mailto:mkrzyszt@uwaterloo.ca">mkrzyszt@uwaterloo.ca</a>
+            </div>
+        </div>
+   
+        <div class="image-container">
+            <img src="mia.jpeg" alt="A photo of me" class="right-img">
+            <img src="mia-dog.JPG" alt="A photo of my dog" class="right-img">
+        </div>
+    </section>
+
+<!-- Music -->
+    <section id="music">
+        <h2 style="color:#3d184d;">Music</h2>
+        <h4>My Top Three Artists of 2024:</h4>
+        <div class="image-stack">
+            
+            <div class="artist-container">
+                <div class="artist-description">
+                    <h3><a href="https://open.spotify.com/artist/3PyJHH2wyfQK3WZrk9rpmP">#1 Ashnikko</a></h3>
+                    <p>Ashnikko was introduced to me through my best friend. I have never loved an artist more than her. She mixes pop, rap, and electronic styles with crazy lyrics that I cannot get enough of. I like to listen to her when I need some motivation or just to boost my mood. My favorite songs are Invitation, Possession of a Weapon and Cheerleader!</p>
+                </div>
+                <img src="ash.jpeg" alt="Ashnikko new album, WeedKiller">
+            </div>
+           
+            <div class="artist-container">
+                <div class="artist-description">
+                    <h3><a href="https://open.spotify.com/artist/2FXC3k01G6Gw61bmprjgqS">#2 Hozier</a></h3>
+                    <p>Hozier caught my eye randomly  and I became obsessed. Not only are the beats to his songs satisfying to listen to, he is a lyrical genius. I really connected with his new EP, a song called Nobody's Soldier, while I was having a rough time. I listen to him when I need a little more quiet in my brain as I feel he speaks to my soul. </p>
+                </div>
+                <img src="hoe.jpeg" alt="Hozier new album, Unreal Unearth">
+            </div>
+         
+            <div class="artist-container">
+                <div class="artist-description">
+                    <h3><a href="https://open.spotify.com/artist/6qqNVTkY8uBg9cP3Jd7DAH">#3 Billie Eilish</a></h3>
+                    <p>I had never been a big Billie Eilish fan before, I honestly did not like her music at all. With her new album Hit Me Hard and Soft it was different then all her other music and I instantly fell in love with it. My favorite songs on the album are L’AMOUR DE MA VIE being number one followed by SKINNY and CHIHIRO. </p>
+                </div>
+                <img src="bill.jpeg" alt="Billie Eilish new album, Hit Me Hard and Soft">
+            </div>
+        </div>
+    </section>
+
+<!-- Hobbies -->
+    <section id="hobbies">
+        <h2 style="color:#1d4cab">Hobbies</h2>
+        <p>I have always been an artistic person finding passion in so many different art forms that let me express my creativity. It started with painting, cheap acrylic paint on canvas all from dollarama is all I needed to enjoy some freedom. Collaging with anything I could find around the house, stickers and what others thought to be garbage. Then I found clay and pottery where I took a class during an overnight camp once and fell in love. I was always making string bracelets at camps and that turned into jewelry making with beads and wire. I take great pride in the jewelry I wear when people compliment it. I want to be able to explore every single art form that is out there! 
+</p>
+      
+    <div class="hobby-images">
+      <img src="jewl.jpeg" alt="making earrings">
+      <img src="mess.jpeg" alt="art room floor coverd in art supplies">
+      <img src="moon.JPG" alt="digital art of crecent moon with astriods">
+      <img src="pot.jpeg" alt="star cup pottery, un-fired">
+    </div>
+      
+    </section>
+
+<!-- Books -->
+    <section id="books">
+        <h2 style="color:#d916bb">Books</h2>
+ <div class="table-container">
+    <table>
+  <tr>
+    <th>Title</th>
+    <th>Author</th>
+    <th>Summary</th>
+    <th>Personal Rating</th>
+  </tr>
+  <tr>
+    <td><i>Throne of Glass</i></td>
+    <td>Sarah J. Maas</td>
+    <td>“In a land without magic, an assassin is summoned to the castle. A king who rules from his throne of glass, but she has not come to kill him. She has come to win her freedom. If she defeats twenty-three murderers, thieves, and warriors in a competition, she will be released from prison to serve as the King's Champion. Her name is Celaena Sardothien” (Mass, 2012). </td>
+    <td>This book took a little but to get into, the first couple chapters are confusing but it doesn't take long to get into the groove of the story. This book takes an interesting perspective of a woman being trained from childhood to be an assassin and in certain ways is very empowering. <b>I rate this book 4/5 stars.</b></td>
+  </tr>
+  <tr>
+    <td><i>A Court of Sliver and Flames</i></td>
+    <td>Sarah J. Maas</td>
+    <td>“Nesta Archeron has always been swift to anger, and slow to forgive. And ever since being forced into the Cauldron and becoming High Fae against her will, she's struggled to find a place for herself. Worse, she can't seem to move past the horrors of the war with Hybern and all she lost in it.” (Mass, 2021).</td>
+    <td>I hated this book at first, but it quickly became my favourite one in the series. This perspective isn’t something that people asked for, I think it was what they needed. The author does an amazing job at displaying what it's like to come home after a long journey. <b>I rate this book 5/5 stars.</b></td>
+  </tr>
+  <tr>
+    <td><i>Funny Story</i></td>
+    <td> Emily Henry</td>
+    <td>“Daphne always loved the way her fiancé Peter told their story. How they met, fell in love , and moved back to his lakeside hometown to begin their life together. He really was good at telling it…right up until the moment he realized he was actually in love with his childhood best friend Petra. Which is how Daphne begins her new story: Stranded in beautiful Waning Bay, Michigan, without friends or family but with a dream job as a children’s librarian, and proposing to be roommates with the only person who could possibly understand her predicament: Petra’s ex, Miles Nowak”(Henry, 2024).
+</td>
+    <td>This is a fun romance novel that is a super light read but has a lot of emotional depth as well. I found myself connecting with the characters laughing and crying with them along the way. <b>I rate this book 5/5 stars.</b></td>
+  </tr>
+</table> 
+      
+  <div class="book-images">
+     <img src="glass.jpg" alt="Throne of Glass book cover">
+      <img src="flames.jpg" alt="Court of Sliver and Flames book cover">
+      <img src="funny.jpg" alt="Funny Story book cover"> 
+     </div>
+  </div>
+    </section>
+
+</body>
+</html>
+
+
