@@ -174,7 +174,7 @@
     }
 
             #music img {
-            max-width: 10%;
+            max-width: 20%;
             margin-bottom: 8px;
             border: 5px solid #3d184d;
             border-radius: 10px;
@@ -272,6 +272,23 @@
           height: 120vh;
           overflow: hidden; 
       }
+      
+       #books .book-images {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 5px;
+          padding-left: 130px;
+         
+      }
+
+        #books .book-images img {
+            max-width: 150px; 
+            border-radius: 10px;
+            border: 4px solid #d916bb; 
+            padding: 5px;
+            margin-top: 25px;
+        }
 
 /* Books Table */
       table {
@@ -314,23 +331,6 @@
 
     th:nth-child(4), td:nth-child(4) { 
         width: 30%; 
-    }
-     
-      #books .book-images {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          gap: 40px;
-          padding-left: 130px;
-         
-      }
-
-    #books .book-images img {
-        max-width: 150px; 
-        border-radius: 10px;
-        border: 4px solid #d916bb; 
-        padding: 5px;
-        margin-top: -30px;
     }
      
     </style>
